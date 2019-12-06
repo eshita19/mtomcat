@@ -14,3 +14,6 @@
    - bin: comtains startup and shutdown scripts.
    - conf: Configuration files like users roles.
    - lib: Libraries which tomcat loads in classpath. Includes servlet-api.jar. The jars will be available/shared among all apllications deployed in tomcat.
+   - logs: contains all the logs related to tomcat like catalina.out, locahost access.
+   - webapps: the location where wars are deployed.
+   - work: The jsp to Java(servlet) translated class resides here.
