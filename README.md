@@ -8,4 +8,9 @@
    
 ## Tomcat manager 
    - Tomcat manager is kind of admin. Through manager gui we can manage applications deployed.
-   - Example: For accessing manager-gui we need to add the role in tomcat-users.xml: https://github.com/eshita19/mtomcat/tree/master/manager
+   - Example: For accessing manager-gui we need to add the role in tomcat-users.xml: https://github.com/eshita19/mtomcat/tree/master/manager.
+   
+## Tomcat folder structure
+   - bin: comtains startup and shutdown scripts.
+   - conf: Configuration files like users roles.
+   - lib: Libraries which tomcat loads in classpath. Includes servlet-api.jar. The jars will be available/shared among all apllications deployed in tomcat.
