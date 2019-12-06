@@ -4,3 +4,4 @@
    - **Catalina**:  Servlet container. Manages life cycle of JSP and servlets.
    - **Jasper**: Does the JSP to server conversion.
    - **Coyote** : HTTP connector.
+   - **Cluster**: Plays important role while tomcat is running in cluster.
