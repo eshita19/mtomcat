@@ -17,3 +17,7 @@
    - logs: contains all the logs related to tomcat like catalina.out, locahost access.
    - webapps: the location where wars are deployed.
    - work: The jsp to Java(servlet) translated class resides here.
+   
+## Tomcat SSL certificate
+   - We can generate SSL certificate using keytool provided in JRE bin.
+   - Command: keytool -genkey -keyalg  RSA -alias esh1 -keystore f:/sslkey/esh1.jks
