@@ -1,0 +1,18 @@
+#Use Keytool command to generate a self-signed certificate and install the certificate in Client Machine JDK Security Key store path.
+
+# generate a certificate using JKS format keystore
+keytool -genkey -alias selfrest -keyalg RSA -keypass pass123 -storetype JKS -keystore selfsigned.jks -storepass pass123 -validity 360 -keysize 2048
+
+# To check the content of the keystore, we can use keytool again:
+keytool -list -v -keystore selfsigned.jks
+
+#Export Self signed certificate into .cer file
+keytool -exportcert -alias selfrest -keystore selfsigned.jks -file selfsigned.cer
+
+# (Run As Administrator- to open CMD.exe)
+# Install self-signed certificate into Java JDK CA Certificate key store path
+# to avoid giving certificate path in the client program.
+keytool -import -alias selfrest -keystore "C:\Program Files\Java\jdk1.8.0_181\jre\lib\security\cacerts" -file selfsigned.cer
+
+# List certificates stored in JDK Key store which you have just now imported into JDK Security path.
+keytool -list -keystore "%JAVA_HOME%\jre\lib\security\cacerts
