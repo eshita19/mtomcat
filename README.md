@@ -22,3 +22,9 @@
    - https://www.mulesoft.com/tcat/tomcat-ssl
    - We can generate SSL certificate using keytool provided in JRE bin.
    - Command: keytool -genkey -keyalg  RSA -alias esh1 -keystore f:/sslkey/esh1.jks
+   
+   
+## Tomcat virtual host
+   - https://www.ramkitech.com/2012/02/understanding-virtual-host-concept-in.html
+   
+   
