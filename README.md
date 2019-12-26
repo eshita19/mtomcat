@@ -30,6 +30,12 @@
 ## Tomcat realm
    - A Realm is a "database" of usernames and passwords that identify valid users of a web application (or set of web applications), plus an enumeration of the list of roles associated with each valid user. 
    - https://javapipe.com/blog/tomcat-realm/
+   - Java security manager provides various permissions.For eg: java.io.FilePermission - Controls read/write/execute access to files and directories. Specify similar permissions in tomcat using /conf/catalina.policy.
+   // These permissions apply to all shared system extensions when
+// ${java.home} points at $JAVA_HOME/jre
+grant codeBase "file:${java.home}/lib/ext/-" {
+        permission java.security.AllPermission;
+};
    
    
    
