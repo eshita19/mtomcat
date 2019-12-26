@@ -27,4 +27,8 @@
 ## Tomcat virtual host
    - https://www.ramkitech.com/2012/02/understanding-virtual-host-concept-in.html
    
+## Tomcat realm
+   - A Realm is a "database" of usernames and passwords that identify valid users of a web application (or set of web applications), plus an enumeration of the list of roles associated with each valid user. 
+   
+   
    
