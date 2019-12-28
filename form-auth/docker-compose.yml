@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  db: 
+    build: 
+      context: ./ 
+      dockerfile : ./msql-Dockerfile
+    container_name: msql 
+    ports:
+      - "3307:3306"
+  webapp:
+    build: 
+      context: ./ 
+      dockerfile : ./mtomcat-Dockerfile
+    container_name: mtomcat
+    ports:
+      - "8080:8080" 
+    depends_on:
+      - db  
+   

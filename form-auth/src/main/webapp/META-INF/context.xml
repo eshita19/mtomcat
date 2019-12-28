@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context docBase="form_auth" path="/form_auth" reloadable="true"
+	useHttpOnly="false">
+	  <Realm className="org.apache.catalina.realm.JDBCRealm"
+      driverName="org.gjt.mm.mysql.Driver"
+   connectionURL="jdbc:mysql://localhost:3307/db1?user=root;password=July2020!"
+       userTable="users" userNameCol="user_name" userCredCol="user_pass"
+   userRoleTable="user_roles" roleNameCol="role_name"/>
+</Context>	
