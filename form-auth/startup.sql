@@ -11,7 +11,7 @@ create table user_roles (
   primary key (user_name, role_name)
 );
 
-insert into users values('eshita', 'July2020!');
+insert into users values('eshita', 'eshita');
 insert into user_roles values('eshita', 'admin');	
 
 

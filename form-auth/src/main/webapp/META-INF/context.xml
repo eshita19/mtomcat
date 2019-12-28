@@ -3,7 +3,7 @@
 	useHttpOnly="false">
 	  <Realm className="org.apache.catalina.realm.JDBCRealm"
       driverName="org.gjt.mm.mysql.Driver"
-   connectionURL="jdbc:mysql://localhost:3307/db1?user=root;password=July2020!"
+   connectionURL="jdbc:mysql://localhost:3307/db1?user=root;password=root"
        userTable="users" userNameCol="user_name" userCredCol="user_pass"
    userRoleTable="user_roles" roleNameCol="role_name"/>
 </Context>	
