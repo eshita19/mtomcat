@@ -1,4 +1,7 @@
 
 FROM tomcat:7
+
 COPY target/form-auth.war $CATALINA_HOME/webapps
+COPY target/form-auth-1.0/WEB-INF/lib/*.jar $CATALINA_HOME/lib
+
 RUN apt-get update && apt-get install -y vim

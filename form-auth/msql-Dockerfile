@@ -1,9 +1,0 @@
-FROM mysql:latest
-RUN apt-get update && apt-get install -y vim
-
-ENV MYSQL_ROOT_PASSWORD=root
-ENV MYSQL_DATABASE=db1
-ENV MYSQL_USER=u1
-ENV MYSQL_PASSWORD=1234
-
-CMD 'mysql -u root -pJuly2020! -e "source startup.sql'

@@ -2,12 +2,14 @@ version: '3'
 
 services:
   db: 
-    build: 
-      context: ./ 
-      dockerfile : ./msql-Dockerfile
-    container_name: msql 
+    image: mysql:latest
+    container_name: msql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root 
     ports:
       - "3307:3306"
+    volumes:
+      - ./docker/data:/docker-entrypoint-initdb.d  
   webapp:
     build: 
       context: ./ 
