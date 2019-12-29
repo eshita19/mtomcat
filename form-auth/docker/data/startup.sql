@@ -1,4 +1,6 @@
-create schema db1;
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+FLUSH PRIVILEGES;
+
 use db1;
 create table users (
   user_name         varchar(15) not null primary key,

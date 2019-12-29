@@ -1,4 +1,3 @@
-create schema db1;
 use db1;
 create table users (
   user_name         varchar(15) not null primary key,
